@@ -8,6 +8,10 @@
   --secondary: Unbounded;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -68,31 +72,40 @@ main {
   font-family: var(--secondary);
 }
 
-.show-case {
+#msg-area {
   width: 94%;
   height: 46rem;
   margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
-.show-case .robot {
+.rigth {
   width: 90%;
   height: 4.2rem;
   color: var(--fifth-color);
   text-align: left;
   font-size: 1.8rem;
+  display: inline-block;
+  max-width: 60%;
+  word-wrap: break-word;
 }
 
-.show-case .client {
+.left {
   width: 90%;
   height: 4.2rem;
   color: var(--quarter-color);
   text-align: right;
   font-size: 1.8rem;
+  display: inline-block;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.msgCon1,
+.msgCon2 {
+  width: 100%;
+  display: inline-block;
 }
 
 .input {

@@ -1,0 +1,121 @@
+:root {
+  --first-color: #fffcf7;
+  --second-color: #ccc5b9;
+  --third-color: #403d39;
+  --quarter-color: #252422;
+  --fifth-color: #eb5e28;
+  --primary-font: Mukta;
+  --secondary: Unbounded;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Mukta;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../imagem/bkg-main.svg);
+  background-size: cover;
+  background-color: var(--quarter-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-chat {
+  width: 34rem;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--first-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem;
+}
+
+.bot-profile {
+  width: 100%;
+  height: 6rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  gap: 2rem;
+}
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 8rem;
+  background-image: url(../imagem/robot-avatar.jpeg);
+  background-position: center;
+  background-size: contain;
+}
+
+.title {
+  font-size: 1rem;
+  font-family: var(--secondary);
+}
+
+.show-case {
+  width: 94%;
+  height: 46rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.show-case .robot {
+  width: 90%;
+  height: 4.2rem;
+  color: var(--fifth-color);
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.show-case .client {
+  width: 90%;
+  height: 4.2rem;
+  color: var(--quarter-color);
+  text-align: right;
+  font-size: 1.8rem;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding: 1.6rem;
+}
+
+.input input {
+  height: 4rem;
+  width: 80%;
+  border: solid 1px var(--fifth-color);
+  padding: 2rem;
+  font-size: 2rem;
+  background: transparent;
+  border-radius: 1rem;
+}
+.input button {
+  width: 20%;
+  height: 4rem;
+  background: transparent;
+  border: none;
+}
